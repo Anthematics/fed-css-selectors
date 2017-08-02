@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+
     <meta charset="UTF-8">
     <title>CSS Fundamentals</title>
 
@@ -15,7 +18,28 @@
     <!-- Re-comment both of the above <link> tags once you've seen their effect -->
 
     <style>
-      /* Put your styles here to get started */
+
+ol > li > p { padding: 4px;
+  background-color: grey;
+    }
+
+ol > li:nth-child(2n+1) > p {
+background-color: green;
+}
+
+ol>li>ul>li:hover {
+background-color:yellow;
+}
+
+ol>li>p>a:hover {
+  text-decoration: none;
+}
+
+ol>li>ul>li:active{
+background-color: red
+}
+
+    /* Put your styles here to get started */
 
       /*
         After you've finished the "Tag Selectors" exercises, move your styles
